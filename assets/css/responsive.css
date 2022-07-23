@@ -1,0 +1,172 @@
+
+/* 
+@media (max-width: 767.99px){
+    .menu{
+        top: 0;
+        right: unset;
+        left: -110px;
+        flex-direction: column;
+        transform: scale(0.75);
+        position: fixed;
+    }
+    .menu:hover{
+        left: -20px;
+    }
+    .menu_item{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .wrapper{
+        flex-direction: column;
+    }
+    .personal_info{
+        max-width: unset;
+        margin-bottom: 60px;
+    }
+    .personal_card{
+        width: auto;
+    }
+    .card_item_content{
+        width: auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 1;
+    }
+    .about_section{
+        margin-top: 0;
+    }
+    .Skills_section{
+        flex-direction: column;
+    }
+    .Skills{
+        margin-bottom: 50px;
+    }
+    .literacy{
+        flex-direction: column;
+    }
+    .education{
+        margin-bottom: 50px;
+    }
+    .brand{
+    margin-right: 20px;
+    }
+} */
+
+
+@media screen and (max-width: 1199.99px){
+    .menu{
+        top: 0;
+        right: unset;
+        left: -110px;
+        flex-direction: column;
+        transform: scale(0.75);
+        position: fixed;
+    }
+    .menu:hover{
+        left: -20px;
+    }
+    .menu_item{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .wrapper{
+        flex-direction: column;
+    }
+    .personal_info{
+        max-width: unset;
+        flex-direction: row;
+        align-items: unset;
+        padding: 60px;
+        height: auto;
+    }
+    .personal_image{
+        position: unset;
+        transform: unset;
+        margin-right: 30px;
+    }
+    .info{
+        display:flex;
+        flex-direction: column;
+        flex: 1;
+    }
+    .personal_name{
+        margin: 0;
+        justify-content: unset;
+    }
+    .personal_career{
+        margin: 0;
+        margin-top: 15px;
+    }
+    .social{
+        justify-content: unset;
+    }
+    .personal_card{
+        width: auto;
+    }
+    .card_item_content{
+        width: auto;
+    }
+    .download_btn{
+        margin: 0;
+    }
+    .about_section{
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 767.99px){
+    .menu{
+        top: 0;
+        right: unset;
+        left: -110px;
+        flex-direction: column;
+        transform: scale(0.75);
+        position: fixed;
+    }
+    .menu:hover{
+        left: -20px;
+    }
+    .menu_item{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .wrapper{
+        flex-direction: column;
+    }
+    .personal_info{
+        max-width: unset;
+        margin-bottom: 60px;
+    }
+    .personal_card{
+        width: auto;
+    }
+    .card_item_content{
+        width: auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 1;
+    }
+    .about_section{
+        margin-top: 0;
+    }
+    .Skills_section{
+        flex-direction: column;
+    }
+    .Skills{
+        margin-bottom: 50px;
+    }
+    .literacy{
+        flex-direction: column;
+    }
+    .education{
+        margin-bottom: 50px;
+    }
+    .brand{
+    margin-right: 20px;
+    }
+}
+
+
+

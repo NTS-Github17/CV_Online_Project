@@ -1,0 +1,89 @@
+html{
+    background: url(https://assets.rawpixel.com/cover_400/Y29sbGVjdGlvbi9jb3Zlci9iNzcyNmJiYjgzOTkzMmM4NTFkMWU3NDZiY2I3ZWIzM19jb3Zlci5qcGc.jpg?s=ZJfhE3iP5yA4T5aIa7UDOo9R4lWFvv3qLIXW4H2EBO4);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body{
+    font-family: Merriweather;
+    margin: 0;
+}
+
+h1, h2, p{
+    margin: 0;
+}
+
+#top{
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+}
+
+#top h1{
+    margin-bottom: 10px;
+}
+
+#bottom{
+    text-align: center;
+    font-weight: 700;
+    background-color: #bdc3c7;
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+.wrapper{
+    position: relative;
+}
+
+#main{
+    padding: 0 320px 0 20px;
+    line-height: 25px;
+}
+
+#main h1, #main h2 {
+    margin: 10px 0 15px;
+}
+
+#main img{
+    display: block;
+    width: 400px;
+    margin: 20px auto;
+    border: 2px solid black;
+    border-radius: 20px 0 20px 0;
+}
+
+.keyword{
+    font-style: italic;
+}
+
+a{
+    color: #3498db;
+}
+
+#sidebar {
+    position: absolute;
+    right: 15px;
+    top: 0;
+    width: 270px;
+    font-size: 14px;
+    border: 2px dashed;
+    padding: 0 0 20px 20px;
+}
+
+#sidebar img{
+    max-width: 100%;
+    margin-top: 20px;
+}
+/* h1{
+    font-size: 16px;
+    /* font-weight: 700; */
+    /* font-style: bold;
+    text-transform: uppercase;
+} */
+
+/* div{
+    border: 1px solid red;
+} */
+
