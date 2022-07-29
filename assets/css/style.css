@@ -4,11 +4,13 @@ html{
     background-repeat: no-repeat;
 }
 
+
 :root{
     --border-radius-default: 20px;
 }
 
-.CV {
+
+.container {
     width: 100%;
     max-width: 1320px;
     padding-right: 15px;
@@ -20,6 +22,7 @@ html{
     box-sizing: border-box;
 }
 
+
 .wrapper{
     margin: 240px auto;
     position: relative;
@@ -27,7 +30,8 @@ html{
     display: flex;
 }
 
-.personal_info{
+
+.sidebar{
     width: 100%;
     max-width: 400px;
     height: 734px;
@@ -40,67 +44,15 @@ html{
     position: relative;
     margin-right: 40px;
 }
-
-.menu{
-    border-radius: 16px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: flex;
-    background-color: #ffffff;
-    padding: 30px;
-    box-sizing: border-box;
-    transition: 0.5s ease-in-out;
-}
-
-.menu_item{
-    border-radius: 12px;
-    width: 84px;
-    height: 84px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f3f6f6;
-    flex-direction: column;
-    margin-right: 20px;
-    text-decoration: none;
-}
-.menu_item:hover{
-    background-color: yellow;
-}
-.menu_item.active {
-    background: linear-gradient(153.43deg, #FA5252 16.67%, #DD2476 100%);
-}
-.menu_item:last-child{
-    margin-right: 0;
-}
-.item_icon{
-    margin-bottom: 7px;
-}
-.item_icon:hover{
-    color: #ffffff;
-}
-.item_title{
-    margin: 0;
-    color: #44566C;
-}
-
-.menu_item.active .item_title{
-    color: #fff;
-}
-
-.personal_image{
+.ava{
     width: 240px;
     height: 240px;
-    border-radius: 20px;
+    border-radius: var(--border-radius-default);
     position: absolute;
     left: 50%;
-    /* transform: translateX(-50%);
-    transform: translateY(-50%); */
     transform: translate(-50%, -50%);
 }
-
-.personal_name{
+.name{
     display: flex;
     font-family: "Roboto Slab";
     font-size: 26px;
@@ -110,12 +62,7 @@ html{
     justify-content: center;
     margin: 140px 0 15px 0;
 }
-
-.info{
-    /* display: flex; */
-}
-
-.personal_career{
+.career{
     height: auto;
     width: fit-content;
     border-radius: 8px;
@@ -143,12 +90,11 @@ html{
     border-radius: 8px;
     margin-right: 10px;
 }
-
-.social_item_icon{
+.social_icon{
     width: auto;
     height: 23px;
 }
-.personal_card{
+.card{
     width: 340px;
     display: flex;
     flex-direction: column;
@@ -160,13 +106,11 @@ html{
     margin-top: 30px; 
     margin-bottom: 30px;  
 }
-
 .card_item{
     display: flex;
     /* align-items: center; */
 }
-
-.card_item_icons{
+.card_icons{
     width: 44px;
     height: 44px;
     border-radius: 8px;
@@ -176,7 +120,7 @@ html{
     align-items: center;
     margin-right: 10px;
 }
-.card_item_title{
+.card_title{
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
@@ -186,7 +130,7 @@ html{
     margin-bottom: 2px;
     color: #44566C;
 }
-.card_item_content{
+.card_content{
     margin: 0;
     font-family: "Poppins";
     font-style: normal;
@@ -197,14 +141,12 @@ html{
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
-.card_item:nth-child(-n+3) {
+.card_item:nth-child(-n+3){
     border-bottom: 1px solid #E3E3E3;
     /* border-bottom: solid 1px #e3e3e3; */
     margin-bottom: 10px;  
     padding-bottom: 10px;
-  }
-
+}
 .download_btn{
     width: 215px;
     height: 55px;
@@ -229,7 +171,52 @@ html{
     line-height: 22px;
 }
 
-.about_section{
+
+.navbar{
+    border-radius: 16px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    background-color: #ffffff;
+    padding: 30px;
+    box-sizing: border-box;
+    transition: 0.5s ease-in-out;
+}
+.nav_item{
+    border-radius: 12px;
+    width: 84px;
+    height: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f6f6;
+    flex-direction: column;
+    margin-right: 20px;
+    text-decoration: none;
+}
+.nav_item.active {
+    background: linear-gradient(153.43deg, #FA5252 16.67%, #DD2476 100%);
+}
+.nav_item:hover{
+    background: yellow;
+}
+.nav_item:last-child{
+    margin-right: 0;
+}
+.item_icon{
+    margin-bottom: 7px;
+}
+.item_title{
+    margin: 0;
+    color: #44566C;
+}
+.nav_item.active .item_title{
+    color: #fff;
+}
+
+
+.main{
     margin-top: 184px;
     flex: 1;
     /* height: 1200px; */
@@ -253,10 +240,6 @@ html{
     margin-right: 30px;
     /* margin-bottom: 30px; */
 }
-.title_bar{
-    
-}
-
 .content1{
     font-family: "Poppins";
     font-style: normal;
@@ -285,8 +268,7 @@ html{
     width: auto;
     height: auto;
 }
-
-.Skills_section{
+.skills_section{
     display: flex;
     background-color: #F8FBFB;
     margin-top: 60px;
@@ -295,8 +277,13 @@ html{
     left: 0; */
     padding: 60px;
 }
-
-.Skill_header{
+.skills{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    flex: 1;
+}
+.skill_header{
     margin: 0;
     margin-bottom: 30px;
     font-family: "Poppins";
@@ -305,12 +292,11 @@ html{
     font-size: 26px;
     line-height: 39px;
 }
-
-.Skills{
-    display: flex;
-    flex-direction: column;
-    margin-right: 30px;
-    flex: 1;
+.skill_item{
+    margin-bottom: 30px;
+}
+.skill_item:last-child{
+    margin-bottom: 0;
 }
 .skill_item_name{
     display: flex;
@@ -322,20 +308,13 @@ html{
     line-height: 24px;
     color: #44566C;
 }
-
-.skill_item{
-    margin-bottom: 30px;
+.skill_item_name span:last-child{
+    margin-right: 12px;
 }
-.skill_item:last-child{
-    margin-bottom: 0;
-}
-
 progress{
     width: 100%;
 }
-progress:nth-child(1){
-    
-}
+
 .knowledges{
     flex: 1;
 }
@@ -394,9 +373,7 @@ progress:nth-child(1){
     margin: 0;
 
 }
-.education_infos{
 
-}
 .education_info{
     box-sizing: border-box;
     margin-bottom: 20px;
@@ -430,7 +407,6 @@ progress:nth-child(1){
     line-height: 30px;
     color: #44566C;
 }
-
 .education_info p span{
     font-family: "Poppins";
     font-style: normal;
@@ -536,7 +512,6 @@ progress:nth-child(1){
     display: flex;
     justify-content: center;
 }
-
 .footer p{
     margin: 0;
     margin-top: 20px;
